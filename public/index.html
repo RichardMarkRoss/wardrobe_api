@@ -26,63 +26,30 @@
                 </div>
                 <div class="one-third column">
                   <div class="temperature">
-                    <span class="temp-celsius">°C</span>
-                    <span class="temp-fahrenheit hidden">F</span>
+                    <span class="temp-celsius"> {{temp}} °C</span>
                   </div>
                 </div>
                 <div class="one-third column">
-                  <span class="weather-condition">~~~</span>
+                  <span class="weather-condition">{{city}}</span>
                 </div>
               </div>
             </div>
-            <!-- <form id="my-form" action=""> -->
-              {{city}}
               <input v-model="city" type="search" placeholder="Search for location or keyword" class="find-forcast">
               <button v-on:click="getWeather" class="btn-search">Search</button>
-            <!-- </form> -->
           </div>
         </div>
 
         <div class="row" >
-            {{clothing_type}}
-          <select name="" id="" v-model="clothing_type">
-            <option v-for="clothing_type in clothing_types">
-              {{clothing_type}}
-            </option>
-          </select>
-
-          {{current_style}}
-
-
           <ul>
             <li v-for="cloths in current_clothing" > {{cloths}} </li>
           </ul>
 
         </div>
         <div>
-          <!-- <ul>
-{{#each data}}
-<li>{{type_clothing}}</li>
-<li>{{name_clothing}}</li>
-<li>{{body_part}}</li>
-{{/each}}
-</ul> -->
-
-          <!-- </div>
-        </div>
-        <div class="row">
-          <div class="search-weather eight columns offset-by-two">
-            <a href="./api.html" class="button1" style="animation-delay:0.14s">Laundry Basket</a>
-            <a href="./api.html" class="button1" style="animation-delay:0.21s">Mix & Match</a>
-          </div>
-        </div> -->
-
-
         </div> <!-- app -->
       </div> <!-- container -->
     </div> <!-- main -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-<script src="domFunc.js" charset="utf-8"></script>
 <script src="wardrobe.js"></script>
 </html>

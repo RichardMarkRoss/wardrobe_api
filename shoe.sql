@@ -11,27 +11,27 @@ create table wardrobe
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('hot', 'jacket', 'torso');
+    ('cold', 'jacket', 'torso');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('hot', 'winter pants', 'leg');
+    ('cold', 'winter pants', 'leg');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('hot', 'rain boots', 'feet');
+    ('cold', 'rain boots', 'feet');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('cold', 'white shirt', 'torso');
+    ('hot', 'white shirt', 'torso');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('cold', 'shirts', 'leg');
+    ('hot', 'shirts', 'leg');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('cold', 'sandels', 'feet');
+    ('hot', 'sandels', 'feet');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values

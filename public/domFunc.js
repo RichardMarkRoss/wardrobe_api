@@ -33,7 +33,8 @@ function updateWeather(json) {
     //Update Weather parameters and location
 
     $(".weather-condition").html(json.weather[0].description);
-    var temp = [(json.main.temp - 273.15).toFixed(0) + "°C", (1.8 * (json.main.temp - 273.15) + 32).toFixed(0) + "F"];
+    var temp = [(json.main.temp - 273.15).toFixed(0) + "°C", 
+    (1.8 * (json.main.temp - 273.15) + 32).toFixed(0) + "F"];
     $(".temp-celsius").html(temp[0]);
     $(".temp-fahrenheit").html(temp[1]);
     $(".temperature").click(function () {
