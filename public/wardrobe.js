@@ -12,7 +12,7 @@ new Vue({
         getWeather: function () {
             var self = this;
             axios
-                .get("http://api.openweathermap.org/data/2.5/weather?q=" + this.city + "&APPID=188b68e6b443a5380ce7ee0f0bb49cfc")
+                .get("https://api.openweathermap.org/data/2.5/weather?q=" + this.city + "&APPID=188b68e6b443a5380ce7ee0f0bb49cfc")
                 .then(function (result) {
                     console.log(result.data.coord);
                     self.getWeatherByCoords(result.data.coord)
@@ -21,7 +21,7 @@ new Vue({
 
         getWeatherByCoords: function (coords) {
             var self = this;
-            const url = "http://api.openweathermap.org/data/2.5/weather?lat=" + coords.lat + "&lon=" + coords.lon + "&APPID=188b68e6b443a5380ce7ee0f0bb49cfc";
+            const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + coords.lat + "&lon=" + coords.lon + "&APPID=188b68e6b443a5380ce7ee0f0bb49cfc";
             console.log(url);
             axios
                 .get(url)
