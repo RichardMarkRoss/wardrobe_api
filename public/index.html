@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ԅ(≖‿≖ԅ)</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="app twelve columns">
+        <div class="row">
+          <div class="search-weather eight columns offset-by-two">
+            <div class="eight columns offset-by-two">
+              <div class="weather-info-text">
+                <div class="one-third column">
+                  <span class="local-time">~~:~~</span>
+                </div>
+                <div class="one-third column">
+                  <div class="temperature">
+                    <span class="temp-celsius">°C</span>
+                    <span class="temp-fahrenheit hidden">F</span>
+                  </div>
+                </div>
+                <div class="one-third column">
+                  <span class="weather-condition">~~~</span>
+                </div>
+              </div>
+            </div>
+            <form id="my-form" action="">
+              <input type="search" placeholder="Search for location or keyword" class="find-forcast">
+              <button class="btn-search">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="search-weather eight columns offset-by-two">
+            <a href="./home.html" class="button1">Wardrobe</a>
+            <a href="./home.html" class="button1" style="animation-delay:0.07s">Weekly Outfits</a>
+          </div>
+<div>
+<!-- <ul>
+{{#each data}}
+<li>{{type_clothing}}</li>
+<li>{{name_clothing}}</li>
+<li>{{body_part}}</li>
+{{/each}}
+</ul> -->
+
+</div>
+        </div>
+        <div class="row">
+          <div class="search-weather eight columns offset-by-two">
+            <a href="./api.html" class="button1" style="animation-delay:0.14s">Laundry Basket</a>
+            <a href="./api.html" class="button1" style="animation-delay:0.21s">Mix & Match</a>
+          </div>
+        </div>
+
+
+      </div> <!-- app -->
+    </div> <!-- container -->
+  </div> <!-- main -->
+</body>
+<script src="domFunc.js" charset="utf-8"></script>
+
+</html>
