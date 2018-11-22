@@ -9,12 +9,14 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+
 <body>
   <div class="main">
     <div class="container">
-      <div class="app twelve columns">
+
+      <div class="app twelve columns app">
         <div class="row">
           <div class="search-weather eight columns offset-by-two">
             <div class="eight columns offset-by-two">
@@ -33,20 +35,32 @@
                 </div>
               </div>
             </div>
-            <form id="my-form" action="">
-              <input type="search" placeholder="Search for location or keyword" class="find-forcast">
-              <button class="btn-search">Search</button>
-            </form>
+            <!-- <form id="my-form" action=""> -->
+              {{city}}
+              <input v-model="city" type="search" placeholder="Search for location or keyword" class="find-forcast">
+              <button v-on:click="getWeather" class="btn-search">Search</button>
+            <!-- </form> -->
           </div>
         </div>
 
-        <div class="row">
-          <div class="search-weather eight columns offset-by-two">
-            <a href="./home.html" class="button1">Wardrobe</a>
-            <a href="./home.html" class="button1" style="animation-delay:0.07s">Weekly Outfits</a>
-          </div>
-<div>
-<!-- <ul>
+        <div class="row" >
+            {{clothing_type}}
+          <select name="" id="" v-model="clothing_type">
+            <option v-for="clothing_type in clothing_types">
+              {{clothing_type}}
+            </option>
+          </select>
+
+          {{current_style}}
+
+
+          <ul>
+            <li v-for="cloths in current_clothing" > {{cloths}} </li>
+          </ul>
+
+        </div>
+        <div>
+          <!-- <ul>
 {{#each data}}
 <li>{{type_clothing}}</li>
 <li>{{name_clothing}}</li>
@@ -54,20 +68,21 @@
 {{/each}}
 </ul> -->
 
-</div>
+          <!-- </div>
         </div>
         <div class="row">
           <div class="search-weather eight columns offset-by-two">
             <a href="./api.html" class="button1" style="animation-delay:0.14s">Laundry Basket</a>
             <a href="./api.html" class="button1" style="animation-delay:0.21s">Mix & Match</a>
           </div>
-        </div>
+        </div> -->
 
 
-      </div> <!-- app -->
-    </div> <!-- container -->
-  </div> <!-- main -->
+        </div> <!-- app -->
+      </div> <!-- container -->
+    </div> <!-- main -->
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 <script src="domFunc.js" charset="utf-8"></script>
-
+<script src="wardrobe.js"></script>
 </html>
