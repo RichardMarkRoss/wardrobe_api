@@ -921,6 +921,21 @@ button:hover {
     display: none;
 }
 
+ul{
+    margin:auto;
+}
+
+li{
+    list-style:none;
+}
+
+li img{
+    width:20wh;
+    height:30vh;
+    margin:auto;
+    list-style:none;
+}
+
 @media screen and (max-width: 1050px) {
     input[type="search"] {
         width: 100%;
