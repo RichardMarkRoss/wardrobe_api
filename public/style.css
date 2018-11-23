@@ -867,7 +867,7 @@ body {
 }
 
 .search-weather {
-    background-color: #B0CF00;
+    background-color: #68B0AB;
     color: #333;
     text-align: left;
     margin: 15px auto 0;
@@ -963,14 +963,12 @@ button:hover {
         top: 0em;
     }
 }
-
 a.button1 {
     display: inline-block;
-    padding: 0.5em 2em;
+    padding: 0.5em 3em;
     border: 0.16em solid #FFFFFF;
     margin: 0 0.3em 0.3em 0;
     box-sizing: border-box;
-    width: 30%;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;

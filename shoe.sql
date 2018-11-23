@@ -11,36 +11,36 @@ create table wardrobe
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('cold', 'jacket', 'torso');
+    ('cold', 'jacket.jpg', 'torso');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('cold', 'winter pants', 'leg');
+    ('cold', 'winterPants.jpg', 'leg');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('cold', 'rain boots', 'feet');
+    ('cold', 'rainBoots.jpg', 'feet');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('hot', 'white shirt', 'torso');
+    ('hot', 'whiteShirt.jpg', 'torso');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('hot', 'shirts', 'leg');
+    ('hot', 'shirt.jpg', 'leg');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('hot', 'sandels', 'feet');
+    ('hot', 'sandels.jpg', 'feet');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('mid', 'long sleeve', 'torso');
+    ('mid', 'longSleeve.jpg', 'torso');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('mid', 'three quater', 'leg');
+    ('mid', 'threeQuater.jpg', 'leg');
 insert into wardrobe
     (type_clothing, name_clothing, body_part)
 values
-    ('mid', 'takkies', 'feet');
+    ('mid', 'takkies.jpgs', 'feet');
